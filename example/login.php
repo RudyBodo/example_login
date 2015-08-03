@@ -38,15 +38,15 @@ if (!empty($_SESSION['username'])) {
             if (!empty($_GET['error'])) {
         	if ($_GET['error'] == 1) {
         	    echo '<div class="alert alert-danger fade in">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>Username dan Password Belum di isi!
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>Login failed!
                      </div>';;
         	} else if ($_GET['error'] == 2) {
         		echo '<div class="alert alert-danger fade in">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>Harap isi username dan password!
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>Login failed!
                      </div>';;
         	} else if ($_GET['error'] == 4) {
         		echo '<div class="alert alert-danger fade in">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>Password belum di isi atau user tidak terdaftar!
+                        <a href="#" class="close" data-dismiss="alert">&times;</a>Login failed!
                      </div>';
         	}
         }
